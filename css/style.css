@@ -207,7 +207,7 @@ button {
 }
 
 .hero__badge img {
-  height: 36px;
+  height: 56px;
   width: auto;
   filter: brightness(0) invert(1);
   object-fit: contain;
