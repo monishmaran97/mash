@@ -78,14 +78,14 @@ button {
 
 /* The logo PNG is black-on-white — shown as-is on the white nav */
 .nav-logo__image {
-  height: 52px;
+  height: 70px;
   width: auto;
   display: block;
 }
 
 /* Brand text removed from HTML — this class kept for safety */
 .nav-logo__text {
-  display: none;
+  display: Mash Design Studio;
 }
 
 .nav-links {
