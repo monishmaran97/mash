@@ -1,0 +1,321 @@
+/* ============================================================
+   MASH DESIGN STUDIO — RESPONSIVE STYLESHEET
+   Breakpoints:
+     Tablet  : max-width 1024px
+     Mobile  : max-width 640px
+   ============================================================ */
+
+/* ============================================================
+   TABLET  (≤ 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* ---- Navigation ---- */
+  .site-nav {
+    padding: 0.9rem 2rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+  }
+
+  /* ---- Hero ---- */
+  .hero__content {
+    padding: 4rem 2rem;
+  }
+
+  /* ---- Vision ---- */
+  .vision {
+    gap: 3rem;
+    padding: 5rem 2rem;
+  }
+
+  .vision__stats {
+    padding-left: 3rem;
+  }
+
+  /* ---- Services ---- */
+  section.services {
+    padding: 5rem 2rem;
+  }
+
+  /* ---- Projects ---- */
+  section.projects {
+    padding: 5rem 2rem;
+  }
+
+  /* ---- Approach ---- */
+  section.approach {
+    padding: 5rem 2rem;
+  }
+
+  /* ---- Contact ---- */
+  .contact__info,
+  .contact__form-wrap {
+    padding: 5rem 2rem;
+  }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    padding: 2rem 2rem;
+  }
+}
+
+/* ============================================================
+   MOBILE  (≤ 640px)
+   ============================================================ */
+@media (max-width: 640px) {
+
+  /* ---- Navigation: hamburger-style collapse ---- */
+  .site-nav {
+    padding: 0.85rem 1.25rem;
+    position: fixed;
+  }
+
+  .nav-logo__image {
+    height: 54px;
+    padding: 4px 8px;
+  }
+
+  /* Hide desktop nav links; show only CTA button */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    font-size: 0.65rem;
+    padding: 0.45rem 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---- Section spacing ---- */
+  section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 68px;
+    min-height: auto;
+  }
+
+  .hero__content {
+    padding: 3rem 1.25rem 2.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .hero__eyebrow {
+    margin-bottom: 1.2rem;
+    font-size: 0.62rem;
+  }
+
+  .hero__headline {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__body {
+    font-size: 0.85rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    font-size: 0.7rem;
+  }
+
+  .hero__media {
+    height: 70vw;
+    min-height: 280px;
+  }
+
+  .hero__badge {
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .hero__badge-inner img {
+    height: 36px;
+  }
+
+  .hero__badge-name {
+    font-size: 0.85rem;
+  }
+
+  .hero__badge p {
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  /* ---- Vision ---- */
+  .vision {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .vision__stats {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .vision-stat {
+    margin-bottom: 0;
+    padding: 0 1rem 0 0;
+  }
+
+  .vision-stat:last-child {
+    padding-right: 0;
+  }
+
+  .vision-stat__number {
+    font-size: 2rem;
+  }
+
+  .vision-stat__label {
+    font-size: 0.6rem;
+  }
+
+  /* ---- Services ---- */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-rule);
+    padding: 2rem 0;
+  }
+
+  .service-card:last-child {
+    border-bottom: none;
+  }
+
+  .services__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* ---- Projects ---- */
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .projects__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects__cta {
+    padding-top: 2rem;
+  }
+
+  /* ---- Approach ---- */
+  .approach__inner {
+    max-width: 100%;
+  }
+
+  .approach-step {
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+  }
+
+  .approach-step__letter {
+    font-size: 2rem;
+    min-width: 1.8rem;
+  }
+
+  /* ---- Contact ---- */
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__info {
+    padding: 3.5rem 1.25rem;
+    border-right: none;
+    border-bottom: 1px solid #222222;
+  }
+
+  .contact__form-wrap {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .contact__body {
+    font-size: 0.85rem;
+  }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+
+  .site-footer__brand {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* ---- Modal / Carousel ---- */
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-header {
+    margin-bottom: 1rem;
+  }
+
+  .modal-title-group h3 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-slide img {
+    max-height: 50vw;
+    min-height: 200px;
+  }
+
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .carousel-arrow--prev {
+    left: 0.5rem;
+  }
+
+  .carousel-arrow--next {
+    right: 0.5rem;
+  }
+}
